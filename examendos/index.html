@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API + CHART</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <nav class="navbar is-transparent">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="./">
+      <img src="https://comodibujar.club/wp-content/uploads/2020/09/kawaii-fresa.jpg" alt="fresa logo" width="70" height="28">
+    </a>
+    <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="./">
+        Inicio
+      </a>
+    </div>
+  </div>
+</nav>
+
+<section class="container">
+<h1>Estadisticas de Frutas</h1>
+</section>
+
+<section class="container">
+<input id="fruitName" class="input is-medium" type="text" placeholder="Busca tu fruta de tu agrado">
+<button onclick="crearGrafica()" class="button">Mostrar Estadisticas</button>
+</section>
+
+<div>
+    <canvas id="myChart"></canvas>
+  </div>
+  
+  
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./index.js"></script>
+    
+</body>
+</html>
